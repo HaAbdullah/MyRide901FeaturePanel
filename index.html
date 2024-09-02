@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Widget</title>
+</head>
+<body>
+    <!-- HTML Section -->
+<div class="custom-widget">
+<div class = "features">
+    <div class = "top">
+        <div class="buttons">
+        <button class="feature-buttons">1</button>
+        <button class="feature-buttons">2</button>
+        <button class="feature-buttons">3</button>
+        <button class="feature-buttons">4</button>
+        <button class="feature-buttons">5</button>
+        <button class="feature-buttons">6</button>
+        <button class="feature-buttons">7</button>
+        <button class="feature-buttons">8</button>
+        </div>
+    </div>
+    <div class = "bottom">
+        <div class="h1-wrapper">
+            <h1>Your Heading</h1>
+        </div>
+        <div class = "img-container">
+            hey :)
+        </div>
+        <div class = "list-container">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- CSS Section -->
+<style>
+body{
+    margin: 0;
+}
+.custom-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.features{
+    margin: 5vh;
+    width: calc(100vw - 20vh); 
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0.68vh 2vh;
+}
+
+.top{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(117, 246, 108, 0.5);
+}
+
+.buttons{
+    margin: 0 5% 0 5%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(16, 239, 0, 0.5);
+}
+.feature-buttons{
+    background-color: #EC4242;
+    height: 100%;
+    width: 10%;
+    border: none;
+    color: rgba(14, 0, 0, 1);
+    position: relative;
+}
+.bottom{
+    height: 70%;
+    background-color: rgba(166, 124, 51, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1-wrapper, .img-container, .list-container {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+    padding: 0 2%;
+}
+
+.h1-wrapper {
+    
+}
+
+.img-container{
+    background-color: rgba(117, 246, 108, 0.5);
+}
+
+.list-container{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M16.6667%205L7.50004%2014.1667L3.33337%2010%22%20stroke%3D%22%230C57A5%22%20stroke-width%3D%221.66667%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E') no-repeat center;
+}
+</style>
+
+<!-- JavaScript Section -->
+<script>
+
+</script>
+
+</body>
+</html>
