@@ -60,15 +60,15 @@
                 <span class = "button-text">Accident Report</span>     
             </button>
             <button class="feature-buttons" data-feature="scan">
-                <i class="fa-solid fa-location-dot icon" style="color: #ffffff;"></i>
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 17L12 21M12 21L16 17M12 21V12M20 16.7428C21.2215 15.734 22 14.2079 22 12.5C22 9.46243 19.5376 7 16.5 7C16.2815 7 16.0771 6.886 15.9661 6.69774C14.6621 4.48484 12.2544 3 9.5 3C5.35786 3 2 6.35786 2 10.5C2 12.5661 2.83545 14.4371 4.18695 15.7935"
+                     />
+                </svg>
                 <span class = "button-text">Document Scan</span>
             </button>
         </button>
         <button class="feature-buttons" data-feature="shop">
-            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 17L12 21M12 21L16 17M12 21V12M20 16.7428C21.2215 15.734 22 14.2079 22 12.5C22 9.46243 19.5376 7 16.5 7C16.2815 7 16.0771 6.886 15.9661 6.69774C14.6621 4.48484 12.2544 3 9.5 3C5.35786 3 2 6.35786 2 10.5C2 12.5661 2.83545 14.4371 4.18695 15.7935"
-                 />
-            </svg>
+            <i class="fa-solid fa-location-dot icon4" ></i>
             <span class = "button-text">Find A Shop</span>
         </button>
         <button class="feature-buttons" data-feature="mileage">
@@ -107,18 +107,48 @@
         </div>
     </div>
 </div>
+<div class = "download-section">
+    <div class="prompt-container">
+            <h3>Ready To Take A Test Drive?</h3>
+    </div>
+    <div class="apple-download">
+        <button class="download-button" onClick="window.open('https://apps.apple.com/ca/app/myride901-car-info-manager/id1562006468', '_blank')">
+            <svg width="18" height="20" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2485 10.9828L3.90322 0.609375L17.0657 8.16562L14.2485 10.9828ZM1.20322 0C0.593848 0.31875 0.186035 0.9 0.186035 1.65469V22.3406C0.186035 23.0953 0.593848 23.6766 1.20322 23.9953L13.2313 11.9953L1.20322 0ZM21.1345 10.575L18.3735 8.97656L15.2938 12L18.3735 15.0234L21.1907 13.425C22.0345 12.7547 22.0345 11.2453 21.1345 10.575ZM3.90322 23.3906L17.0657 15.8344L14.2485 13.0172L3.90322 23.3906Z" fill="white"/>
+            </svg>                
+            <p>App Store</p>
+        </button>
+    </div>
+    <div class="android-download">
+        <button class="download-button"onClick="window.open('https://play.google.com/store/apps/details?id=com.myride901', '_blank')">
+            <svg width="20" height="24" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4121 15.7049C21.3989 13.3288 22.4896 11.5354 24.6973 10.2146C23.4621 8.47299 21.596 7.51479 19.1321 7.32703C16.7996 7.14574 14.2503 8.66723 13.3173 8.66723C12.3317 8.66723 10.0715 7.39177 8.29745 7.39177C4.63114 7.45004 0.734863 10.2729 0.734863 16.0157C0.734863 17.712 1.05024 19.4644 1.68101 21.2729C2.52203 23.649 5.55757 29.4759 8.72453 29.3788C10.3803 29.34 11.5498 28.2199 13.7049 28.2199C15.7943 28.2199 16.8785 29.3788 18.7248 29.3788C21.918 29.3335 24.6644 24.0374 25.466 21.6549C21.1821 19.6672 21.4121 15.8279 21.4121 15.7049ZM17.6932 5.07394C19.4869 2.97624 19.3227 1.06629 19.2701 0.380005C17.6866 0.470646 15.8535 1.44181 14.8088 2.63957C13.6589 3.9215 12.9822 5.50772 13.1267 7.29466C14.8416 7.42414 16.4054 6.55657 17.6932 5.07394Z" fill="white"/>
+            </svg>                
+            <p>Play Store</p>
+        </button>
+    </div>
+    <div class="demo-viewer">
+        <button class="download-button">
+            <svg width="25" height="16" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0C4.34531 0 3 1.34531 3 3V15H6V3H24V15H27V3C27 1.34531 25.6547 0 24 0H6ZM0.9 16.5C0.403125 16.5 0 16.9031 0 17.4C0 19.3875 1.6125 21 3.6 21H26.4C28.3875 21 30 19.3875 30 17.4C30 16.9031 29.5969 16.5 29.1 16.5H0.9Z" fill="white"/>
+            </svg>                
+            <p>Web Demo</p>
+        </button>
+    </div>    
+</div>
 
 <!-- CSS Section -->
 <style>
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 .features{
     display: flex;
     flex-direction: column;
-    margin: 5vh;
     height: 600px;
     width: 1100px;
     /* background-color: rgba(255, 255, 255, 0.5); */
@@ -174,6 +204,7 @@ body{
 
 .feature-buttons.active .icon,
 .feature-buttons.active .icon2,
+.feature-buttons.active .icon4,
 .feature-buttons.active .button-text {
     transform: scale(110%);
     color:#0C1248;
@@ -183,6 +214,7 @@ body{
     stroke: #0C1248;
     color: #0C1248;
 }
+
 
 .icon{
     width: 50px;
@@ -204,6 +236,12 @@ body{
     stroke-linejoin: round;
 }
 
+
+.icon4{
+
+    font-size: 50px;
+    color: rgb(255, 255, 255);            
+}
 
 .icon3 {
     width: 50px;
@@ -270,7 +308,7 @@ h1{
 
 .demo-img{
     position: absolute;
-    height: 95%;
+    height: 95% ;
     width: auto; 
     max-width: 100%;
     display: block;
@@ -339,6 +377,83 @@ h1{
     width: 20px;
     height: 20px;
     background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIGZpbGw9IiNFQzQyNDIiIHdpZHRoPSIxNXB4IiBoZWlnaHQ9IjE1cHgiIHZpZXdCb3g9IjAgMCAxOTIwIDE5MjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJNMTc0My44NTggMjY3LjAxMiA3MTAuNzQ3IDEzMDAuMTI0IDE3Ni4wMDUgNzY1LjM4MiAwIDk0MS4zODdsNzEwLjc0NyA3MTAuODcxIDEyMDkuMjQtMTIwOS4xMTZ6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+') no-repeat center;
+}
+.download-section{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 3vh;
+    height: 110px;
+    width: 1100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0.68vh 2vh; 
+    padding: 0 50px 0 50px;
+}
+
+.prompt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root {
+    --buttonWidth: 100%;
+    --buttonHeight: 55%
+}
+h3{
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 0;
+}
+
+.apple-download, .android-download, .demo-viewer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+button.download-button {
+    width: var(--buttonWidth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #D33434;
+    height: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+button.download-button:hover {
+    width: var(--buttonWidth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #0C1248;
+    height: 50%;
+    border-radius: 5px;
+}
+.download-button svg {
+    margin-right: 5px; 
+}
+
+
+
+p{
+    font-size:  12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 350;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ffffff;
+    margin-left: 0;
 }
 @media (max-width: 768px){
 .features{
@@ -449,7 +564,7 @@ h1{
         },
         'shop': {
             title: 'Find a Shop',
-            image: 'https://www.myride901.com/wp-content/uploads/2024/09/find-a-shop1.png',
+            image: 'https://www.myride901.com/wp-content/uploads/2024/09/find-a-shop1-6m8aeMwWc-transformed.png',
             list: [
                 'Quickly locate trusted service providers worldwide, ensuring your vehicle receives timely care wherever you travel.',
                 'Contact the service providers directly and or book appointments right from the app with participating MyRide901 service providers.',
@@ -489,6 +604,8 @@ h1{
                 // Update button styles
                 buttons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
+                b1.classList.add('active');
+                b2.classList.remove('active');
             });
         button1 = document.getElementById('b1');
         button2 = document.getElementById('b2');
