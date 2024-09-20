@@ -90,13 +90,13 @@
                 </div>   
             </button>
         </button>
-        <button class="feature-buttons" data-feature="accident">
+        <button class="feature-buttons" data-feature="shop">
             <div class="svg-container">
                 <svg class = "icon4" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z"></path> </g>
                 </svg>
                 </div>
             <div class="button-text-container">
-                <span class = "button-text">Accident Report</span>
+                <span class = "button-text">Find A Shop</span>
             </div>      
         </button>
         <button class="feature-buttons" data-feature="mileage">
@@ -160,14 +160,14 @@
             <p>Play Store</p>
         </button>
     </div>
-    <!-- <div class="demo-viewer">
+    <div class="demo-viewer">
         <button class="download-button">
             <svg width="25" height="16" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 0C4.34531 0 3 1.34531 3 3V15H6V3H24V15H27V3C27 1.34531 25.6547 0 24 0H6ZM0.9 16.5C0.403125 16.5 0 16.9031 0 17.4C0 19.3875 1.6125 21 3.6 21H26.4C28.3875 21 30 19.3875 30 17.4C30 16.9031 29.5969 16.5 29.1 16.5H0.9Z" fill="white"/>
             </svg>                
             <p>Web Demo</p>
         </button>
-    </div>     -->
+    </div>    
     </div>
 </div>
 
@@ -568,6 +568,29 @@ h1{
     border: 0.4vh solid 50;
     transform: translateY(0vh);
 }
+.download-section{
+    display: flex;
+    flex-direction: column ;
+    width:100vw;
+    height: auto;
+}
+.prompt-container{
+width: 100vw;
+text-align: center;
+}
+.download-buttons{
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+}
+button.download-button {
+   height: 60px;
+   width: 100%;
+}
+button.download-button:hover {
+    height: 60px;
+    width: 100%;
+}
 }
 </style>
 
@@ -596,7 +619,7 @@ h1{
         'reminders': {
             title: 'Service Reminders',
             image: 'https://www.myride901.com/wp-content/uploads/2024/09/reminders1.png',
-            image2: "https://www.myride901.com/wp-content/uploads/2024/09/Reminders2.png",
+            image2: "https://www.myride901.com/wp-content/uploads/2024/09/Reminder2-1.jpg",
             list: [
                 'Timely service helps identify potential issues early, preventing them from becoming more expensive problems later.',
                 'Each reminder includes a customized link to the service event, ensuring you have easy access to the details of the service to be performed.',
@@ -605,14 +628,16 @@ h1{
         },
         'safety': {
             title: 'Safety Recall Look-Up',
-            image: 'https://i.ibb.co/Wgr529x/Screenshot-20240902-204043.png',
+            image: 'https://www.myride901.com/wp-content/uploads/2024/09/Safety-Recall-1.jpg',
+            image2: 'https://www.myride901.com/wp-content/uploads/2024/09/Safety-Recall-2-1.jpg',
             list: [
                 'Instantly check for manufacturing defects and safety recalls to stay informed of critical issues.'
             ]
         },
         'accident': {
             title: 'Accident Reporting',
-            image: 'https://i.ibb.co/Wgr529x/Screenshot-20240902-204043.png',
+            image: 'https://www.myride901.com/wp-content/uploads/2024/09/Screenshot_20240919-191214.png',
+            image2: 'https://www.myride901.com/wp-content/uploads/2024/09/AccidentReport2-1.jpg',
             list: [
                 'Capture accident details and images easily with a guided form that prompts you to capture all necessary information from the scene.',
                 'Generate a comprehensive report instantly, ready for law enforcement and insurance claims, streamlining the aftermath of an accident.',
@@ -622,6 +647,7 @@ h1{
         'scan': {
             title: 'Service Receipt Scanning & Package Download',
             image: 'https://www.myride901.com/wp-content/uploads/2024/09/Documentscan1.png',
+            image2: 'https://www.myride901.com/wp-content/uploads/2024/09/Scan2-1.jpg',
             list: [
                 'Snap a photo of service receipts to effortlessly add parts, labor, and cost details to your service timeline. MyRide901 does the data entry so you don’t have to.',
                 'View extracted information in a simplified format, including parts replaced, labor costs, and total expenses, without digging through lengthy documents.'
@@ -629,7 +655,8 @@ h1{
         },
         'shop': {
             title: 'Find a Shop',
-            image: 'https://www.myride901.com/wp-content/uploads/2024/09/find-a-shop1-6m8aeMwWc-transformed.png',
+            image: 'https://www.myride901.com/wp-content/uploads/2024/09/FindShop2-1.jpg',
+            image2: "https://www.myride901.com/wp-content/uploads/2024/09/FindShop1-1.jpg",
             list: [
                 'Quickly locate trusted service providers worldwide, ensuring your vehicle receives timely care wherever you travel.',
                 'Contact the service providers directly and or book appointments right from the app with participating MyRide901 service providers.',
